@@ -1,0 +1,7 @@
+.voxcpm-venv/
+__pycache__/
+*.pyc
+*.pyo
+models/
+*.wav
+*.flac

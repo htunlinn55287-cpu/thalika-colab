@@ -1,0 +1,37 @@
+{
+  "name": "thalika",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "desktop": "node scripts/electron-dev.mjs",
+    "desktop:start": "node scripts/electron-start.mjs",
+    "repair:electron": "node scripts/repair-electron.mjs",
+    "metrics:memory": "node scripts/memory-report.mjs",
+    "metrics:resources": "node scripts/resource-report.mjs",
+    "build": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit --incremental false"
+  },
+  "dependencies": {
+    "@audio/decode-mp3": "^1.1.0",
+    "lucide-react": "^1.16.0",
+    "next": "^16.2.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "zod": "3.24.4"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.21",
+    "@types/react": "19.0.12",
+    "@types/react-dom": "19.0.4",
+    "autoprefixer": "10.4.21",
+    "electron": "^42.3.0",
+    "postcss": "8.5.10",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.8.3"
+  },
+  "overrides": {
+    "postcss": "8.5.10"
+  }
+}

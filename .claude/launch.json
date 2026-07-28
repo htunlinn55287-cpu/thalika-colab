@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Next.js dev (web)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 3000,
+      "autoPort": true
+    },
+    {
+      "name": "Electron desktop (dev)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "desktop"],
+      "port": 3000,
+      "autoPort": true
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+# Dependencies
+node_modules/
+
+# Next.js and build output
+.next/
+out/
+dist/
+release/
+releases/
+coverage/
+.turbo/
+.cache/
+*.tsbuildinfo
+
+# Local environment and secrets
+.env*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local Thalika runtime data (ignore all files and nested directories)
+data/scripts/**
+data/jobs/**
+data/outputs/**
+data/profiles/**
+data/reviews/**
+data/memory/**
+data/logs/**
+
+# Keep shareable folder placeholders and examples
+!data/scripts/.gitkeep
+!data/jobs/.gitkeep
+!data/outputs/.gitkeep
+!data/profiles/.gitkeep
+!data/reviews/.gitkeep
+!data/memory/MEMORY.example.md
+
+# Global privacy safeguard: prevent accidental commit of voice references, audio outputs, or media
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+*.opus
+*.pcm
+
+# Local VoxCPM2 server runtime artifacts (the local-server/ source is tracked)
+local-server/.voxcpm-venv/
+local-server/__pycache__/
+local-server/*.pyc
+local-server/models/
+
+# Global safeguard: AI model weights, checkpoints, and general Python environments
+*.safetensors
+*.pth
+*.pt
+*.onnx
+*.ckpt
+*.gguf
+*.bin
+huggingface/
+checkpoints/
+venv/
+.venv/
+env/
+*.egg-info/
